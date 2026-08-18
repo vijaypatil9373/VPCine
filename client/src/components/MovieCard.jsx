@@ -1,0 +1,2 @@
+import React from 'react'; import {Link} from 'react-router-dom';
+export default function MovieCard({movie}){return <div className="movie-card"><Link to={'/movies/'+movie.id}><img src={movie.poster_path} alt={movie.title}/></Link><h3>{movie.title}</h3><p>{new Date(movie.release_date).getFullYear()} · {movie.genres.slice(0,2).map(g=>g.name).join(' | ')} · {Math.floor(movie.runtime/60)}h {movie.runtime%60}m</p><div className="card-bottom"><Link className="primary small" to={'/movies/'+movie.id}>Buy Tickets</Link><span>★ {movie.vote_average.toFixed(1)}</span></div></div>}

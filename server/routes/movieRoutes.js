@@ -1,0 +1,2 @@
+import {Router} from 'express'; import Movie from '../models/Movie.js'; const r=Router();
+r.get('/',async(req,res)=>{try{res.json(await Movie.find())}catch(e){res.status(500).json({message:e.message})}}); r.get('/:id',async(req,res)=>{try{const m=await Movie.findById(req.params.id);if(!m)return res.status(404).json({message:'Movie not found'});res.json(m)}catch(e){res.status(400).json({message:e.message})}}); export default r;

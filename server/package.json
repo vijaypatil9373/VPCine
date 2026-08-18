@@ -1,0 +1,1 @@
+{"name":"quickshow-server","version":"1.0.0","type":"module","scripts":{"dev":"node --watch server.js","start":"node server.js"},"dependencies":{"@clerk/express":"^2.1.57","cors":"^2.8.5","dotenv":"^16.4.7","express":"^5.1.0","mongoose":"^8.10.1"}}

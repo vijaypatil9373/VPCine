@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="64" height="64" rx="16" fill="#F84565"/>
+
+  <!-- V -->
+  <path d="M10 15 L22 49 H29 L41 15 H33 L25.5 39 L18 15 Z"
+        fill="white"/>
+
+  <!-- Play symbol -->
+  <path d="M38 23 L54 32 L38 41 Z"
+        fill="white"/>
+
+</svg>
